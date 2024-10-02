@@ -1,0 +1,107 @@
+
+.main {
+    height: auto;
+}
+
+.text {
+    text-align: start;
+}
+.text p {
+    padding: 10px 0;
+    color: orange;
+
+}
+.text h1 {
+    padding: 10px 0;
+    color: var(--text);
+}
+.text h5 {
+    padding: 10px 0;
+    color: var(--text);
+    opacity: 0.5;
+}
+
+.mainSec {
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.boc {
+    text-align: center;
+    height: 360px;
+    width: 300px;
+    position: relative;
+    margin: 70px 0;
+    background-color: var(--hoverPro);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #000;
+    transition: 0.3s;
+}
+
+.boc:hover {
+    cursor: pointer;
+    background-color: var(--hover);
+}
+.boc .img  {
+    translate: 0 -100px;
+    transition: 0.3s;
+}
+
+.boc img {
+    transition: 0.3s;
+} 
+
+
+.boc:hover img {
+    scale: 1.1;
+} 
+
+
+.boc .box .icon {
+    margin-top: 30px;
+    color: yellow;
+}
+
+.boc .box h1 {
+    color: var(--text);
+    font-weight: 800;
+    margin: 10px 0;
+}
+
+.boc .box p {
+    color: var(--text);
+    opacity: 0.5;
+}
+
+.boc .box button {
+    background: var(--iconColor);
+    padding: 5px 16px;
+    margin-top: 30px;
+    color: var(--text);
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    text-align: right;
+    transition: 0.3s;
+}
+
+.boc .box button:hover {
+    transform: scale(1.1);
+}
+
+.boc:hover p , .boc:hover h1 {
+    opacity: 1;
+    color: #fff;
+}
+
+@media(max-width: 900px) {
+    .text {
+        padding-top: 50px;
+        text-align: center;
+    }
+}

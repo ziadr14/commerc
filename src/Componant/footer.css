@@ -1,0 +1,42 @@
+
+footer {
+    padding: 1.5rem ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1.9rem;
+    background: linear-gradient(orange , rgb(189, 157, 84));
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+}
+
+footer ul li a {
+    padding-right: 20px;
+    color: var(--text);
+    transition: 0.3s;
+}
+
+footer.flex ul li a:hover {
+    color: gray;
+    opacity: 0.8;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+footer.flex p {
+    color: var(--text);
+}
+
+
+@media (max-width: 600px) {
+    footer.flex {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    footer.flex ul li a {
+        margin: 20px;
+    }
+}
